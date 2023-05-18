@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Dancing+Script:wght@400;500&family=Poppins:wght@300;400;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+
+}
+h2{
+    font-weight: 500;
+    color: #111;
+}
+body{
+    min-height: 1000px;
+}
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/priscilla-du-preez-dlxLGIy-2VU-unsplash.jpg);
+    background-size: cover;
+}
+
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+    animation: movedown 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.banner .content h2{
+    font-size: 5em;
+    color: #fff;
+    
+}
+.banner .content p{
+    font-size: 1em;
+    color: #fff;
+}
+.btn001{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display:inline-block ;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+.btn001:hover{
+    letter-spacing: 6px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 05);
+    
+}
+
+header.sticky .logo{
+    color: #111;
+}
+
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 3em;
+    text-decoration: none;
+    animation: movedown 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movedown{
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+header .logo span{
+    color: #ff0157;
+}
+
+
+header .movement{
+    position: relative;
+    display: flex;
+    animation: movedown 1s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+header .movement li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .movement li a{
+    text-decoration: none;
+    color: #ff0157;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header.sticky .movement li a{
+    color: #111;
+}
+
+header .movement li a:hover{
+    color: #ff0157;
+    letter-spacing: 1px;
+}
+
+/* Css for new section */
+
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 50%;
+}
+
+.titleText{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titleText span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+
+.row .col50 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.imgBx:hover{
+    -webkit-box-shadow: 1px -12px 59px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -12px 59px 9px rgba(0,0,0,0.75);
+    box-shadow: 1px -12px 59px 9px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.menu .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+
+}
+
+.menu .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .content .box .text{
+    padding: 15px 0 5px;
+}
+
+.menu .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+
+.experts .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.experts .content .box{
+    width: 250px;
+    margin: 15px;
+
+}
+
+.experts .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.experts .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.experts .content .box .text{
+    padding: 15px 0 5px;
+}
+
+.experts .content .box .text h3{
+    font-weight: 500;
+    color: #111;
+}
+
+.testimonials{
+    background: url(../images/sky1.jpg);
+    background-size: cover;
+}
+
+.white .titleText,
+.white p 
+{
+    color: #fff;
+}
+
+.testimonials .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.testimonials .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonials .content .box .imgBx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimonials .content .box .imgBx  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonials .content .box .text{
+    text-align: center;
+}
+
+.testimonials .content .box .text p{
+    color: #666;
+    font-style: italic;
+}
+
+.testimonials .content .box .text h3{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: #ff0157;
+    font-weight: 700;
+}
+
+.news{
+    background-color: rgb(36, 32, 32);
+    color: white;
+
+}
+.btn002{
+    height: 45px;
+    width: 100px;
+    background: white;
+    margin-left: -10px;
+    border: 2px solid white;
+    font-weight: 600;
+
+}
+
+.news input{
+    height: 45px;
+    width: 50%;
+    border: 2px solid white;
+    outline: none;
+    background: black;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.news ::placeholder{
+    color: white;
+}
+
+.news p{
+    margin: 0;
+}
+
+.fab{
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+
+.copyrightText{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.copyrightText p{
+    color: #333;
+    
+}
+
+
+.copyrightText a{
+    color: #ff0157;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (max-width: 991px)
+{
+    header,
+    header.sticky
+    {
+         padding: 10px 20px;
+    }
+
+    header .movement
+    {
+        display: none;
+    }
+
+    header .movement.active
+    {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    header .movement li 
+    {
+        margin-left: 0;
+     }
+
+     header .movement li a {
+        color: #fff;
+        font-size: 1.6em;
+      }
+
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../images/ham\ burger\ toggle.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active
+    {
+        background: url(../images/toggle\ cancel.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: white;
+    }
+
+    header.sticky .menuToggle
+    {
+        filter: invert(1);
+    }
+
+    section 
+    {
+        padding: 20px;
+      }
+
+      .banner .content h2
+       {
+        font-size: 3em;
+        color: #fff;
+      }  
+
+      .row
+       {
+        flex-direction: column;
+       }  
+      
+       .row .col50 
+       {
+        position: relative;
+        width: 100%;
+      }
+
+      .row .col50 .imgBx 
+      {
+        margin-top: 20px;
+        height: 300px;
+      }
+
+      .menu .content 
+      {
+        margin-top: 20px;
+      }
+
+      .menu .content .box
+       {
+        margin: 10px;
+      }
+
+      .menu .content .box .imgBx 
+      {
+        height: 260px;
+      }
+
+      .title
+       {
+        text-align: center;
+      }
+
+      .titleText
+       {
+        font-size: 1.8em;
+        font-weight: 300;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+      }
+
+      .testimonials .content .box 
+      {
+        margin: 10px;
+        padding: 20px;
+      }
+
+      .contactform 
+      {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+}
+
+@media (max-width: 480px){
+    .banner .content h2{
+            font-size: 2.2em;
+            color: #fff;
+    }
+}

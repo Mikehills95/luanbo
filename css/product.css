@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Dancing+Script:wght@400;500&family=Poppins:wght@300;400;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    width: 100%;
+    z-index: 100;
+    transition: 0.5s;
+
+}
+
+nav{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    color: #171427;
+}
+
+header .logo{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header .logo i{
+    color: #ff0157;
+}
+
+header .helmet{
+    position: relative;
+    display: flex;
+}
+
+header .helmet li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .helmet li a{
+    text-decoration: none;
+    color: #ff0157;
+    font-weight: 500;
+}
+
+.section-title{
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.shop{
+    padding: 1rem 2rem 2rem;
+    margin-top: 4rem;
+}
+
+/* Styling for SHop Content */
+
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px, auto));
+    gap: 1.5rem;
+    padding: 20px 20px;
+}
+
+.product-box{
+    position: relative;
+}
+
+.product-box:hover{
+    padding: 10px;
+    border: 2px solid #171427;
+    transition: 0.4s;
+}
+
+.product-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.product-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.price{
+    font-weight: 500;
+}
+
+#cart-icon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #171427;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cart-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product-title{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+}
+
+.cart-price{
+    font-weight: 500;
+}
+
+.cart-quantity{
+    border: 1px solid #ff0157;
+    outline-color: #171427;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.cart-remove{
+    font-size: 24px;
+    color: #ff0157;
+    cursor: pointer;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 2px solid #171427;
+}
+
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price{
+    margin-left: 0.5rem;
+}
+
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: #ff0157;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover{
+    background: #171427;
+
+}
+
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: #171427;
+    cursor: pointer;
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: #fff;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+}
+
+.cart.active{
+    right: 0;
+}
+
+#cart-icon:hover{
+    background: hsl(249, 32%, 17%);
+}
+
